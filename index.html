@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Isuru Ariyarathna</title>
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Golos+Text:wght@400;500;600;700;800;900&family=M+PLUS+1+Code:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1><center>Isuru Ariyarathna</center></h1>
+    <div class="bodyContainer">
+      <!-- navigation bar -->
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="#" class="navbar__logo">Isuru Ariyarathna</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="cl-effect-5">
+            <a href="#"><span data-hover="About">About</span></a>
+            <a href="#"><span data-hover="Experience">Experience</span></a>
+            <a href="#"><span data-hover="Work">Work</span></a>
+            <a href="#"><span data-hover="Contact">Contact</span></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero section -->
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__content">
+            <p class="hero__text">Hello, my name is</p>
+            <h1 class="hero__title">Isuru Ariyarathna</h1>
+            <p class="hero__role">I build things for computers.</p>
+            <p class="hero__para">
+              I am an ambitious and motivated undergraduate software engineer
+              with a passion for coding and a desire to contribute to innovative
+              and challenging projects. With strong problem-solving skills and
+              an ability to learn quickly, I am eager to leverage my technical
+              expertise to develop efficient and effective software solutions.
+            </p>
+            <button id="resume">Download CV</button>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
