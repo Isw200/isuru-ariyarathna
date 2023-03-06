@@ -3,11 +3,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #00000063;
+  height: 70px;
   backdrop-filter: blur(10px);
   color: #fff;
   padding: 10px;
   z-index: 999;
+  transition: all 0.3s;
 }
 
 .navbar ul {
@@ -22,7 +23,7 @@
   text-align: center;
 }
 
-a {
+.navbar a {
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -38,7 +39,6 @@ a {
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  padding: 1.5em 0;
 }
 
 .navbar__logo {
@@ -49,51 +49,56 @@ a {
 
 /* nav item animations */
 .cl-effect-5 a {
-	position: relative;
-	display: inline-block;
-	margin: 15px 15px;
-	outline: none;
-	color: #fff;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 100;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1em;
+  position: relative;
+  display: inline-block;
+  margin: 15px 15px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 100;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 1em;
 }
 
 nav a:hover,
 nav a:focus {
-	outline: none;
+  outline: none;
 }
 
 .cl-effect-5 a {
-	overflow: hidden;
-	padding: 0 4px;
-	height: 1em;
+  overflow: hidden;
+  padding: 0 4px;
+  height: 1em;
 }
 
 .cl-effect-5 a span {
-	position: relative;
-	display: inline-block;
-	-webkit-transition: -webkit-transform 0.3s;
-	-moz-transition: -moz-transform 0.3s;
-	transition: transform 0.3s;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .cl-effect-5 a span::before {
-	position: absolute;
-	top: 100%;
-	content: attr(data-hover);
-	font-weight: 700;
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 700;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .cl-effect-5 a:hover span,
 .cl-effect-5 a:focus span {
-	-webkit-transform: translateY(-100%);
-	-moz-transform: translateY(-100%);
-	transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* navigation bar animation */
+.nav-up {
+  top: -70px;
 }

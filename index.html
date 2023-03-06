@@ -9,19 +9,20 @@
     <!-- CSS Links -->
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/social&email.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Golos+Text:wght@400;500;600;700;800;900&family=M+PLUS+1+Code:wght@200;300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arizonia&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=M+PLUS+1+Code:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="bodyContainer">
       <!-- navigation bar -->
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <div class="navbar__container">
           <a href="#" class="navbar__logo">Isuru Ariyarathna</a>
           <div class="navbar__toggle" id="mobile-menu">
@@ -42,8 +43,15 @@
         <div class="hero__container">
           <div class="hero__content">
             <p class="hero__text">Hello, my name is</p>
-            <h1 class="hero__title">Isuru Ariyarathna</h1>
-            <p class="hero__role">I build things for computers.</p>
+            <div class="hero__title">Isuru Ariyarathna</div>
+            <h1
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type='["I am a Software Engineer.", "I build things for Computers."]'
+            ></h1>
+            <span class="wrap"></span>
+
             <p class="hero__para">
               I am an ambitious and motivated undergraduate software engineer
               with a passion for coding and a desire to contribute to innovative
@@ -51,10 +59,320 @@
               an ability to learn quickly, I am eager to leverage my technical
               expertise to develop efficient and effective software solutions.
             </p>
-            <button id="resume">Download CV</button>
+            <!-- CV download -->
+            <div class="cv_button">
+              <a class="btn-6" href="#">Download CV <span></span></a>
+            </div>
           </div>
         </div>
+
+        <div class="socialMedia">
+            <ul class="social__icons">
+              <li>
+                <a
+                  href="https://github.com/Isw200"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-github"
+                  >
+                    <title>GitHub</title>
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path></svg></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/_isuru_ariyarathna_/"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-instagram"
+                  >
+                    <title>Instagram</title>
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path
+                      d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                    ></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-twitter"
+                  >
+                    <title>Twitter</title>
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                    ></path></svg></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/isuru-ariyarathna-8a5404222/"
+                  aria-label="Linkedin"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-linkedin"
+                  >
+                    <title>LinkedIn</title>
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    ></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle></svg></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/isuru-ariyarathna-8a5404222/"
+                  aria-label="Linkedin"
+                  target="_blank"
+                  rel="noreferrer"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-linkedin"
+                  >
+                    <title>LinkedIn</title>
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    ></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle></svg></a>
+              </li>
+              <li id="bottom_bar"></li>
+            </ul>
+          </div>
+          <div class="email">
+            <a href = "mailto: isuruariyarathna2k00@gmail.com
+            ">isuruariyarathna2k00@gmail.com</a>
+            <li id="bottom_bar"></li>
+          </div>
       </section>
     </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac metus
+      eget arcu feugiat lacinia eu pellentesque mi. Suspendisse ac convallis
+      dolor. Suspendisse consequat molestie nunc, eget venenatis tellus aliquet
+      nec. Nunc in lobortis ex. Integer gravida eget purus eu porta. Mauris
+      ullamcorper justo nec fermentum convallis. Nam condimentum quis ante
+      laoreet volutpat. Etiam porttitor, eros ut semper auctor, velit orci
+      efficitur erat, et ultrices mauris mauris vitae lacus. Pellentesque
+      euismod interdum mi, non mollis tortor aliquet eget. In mattis fringilla
+      nibh. Fusce vitae ex rhoncus, semper ipsum a, efficitur neque. Etiam in
+      nisi tristique risus efficitur laoreet et eget mi. In laoreet malesuada
+      risus eu scelerisque. Suspendisse convallis nisi nec turpis faucibus
+      ornare. Fusce laoreet ornare mollis. Duis ornare nunc in tellus laoreet,
+      id mattis metus vehicula. Quisque sed sem nibh. Etiam mi nulla, feugiat
+      quis maximus a, cursus id massa. Donec condimentum, odio et elementum
+      porttitor, massa nunc tincidunt lacus, vitae rutrum nisi nunc non dolor.
+      Donec et risus ac justo imperdiet vulputate. Interdum et malesuada fames
+      ac ante ipsum primis in faucibus. Curabitur vel vulputate urna, in
+      efficitur metus. Suspendisse euismod dapibus fermentum. Curabitur
+      sollicitudin nulla sapien, eu accumsan tellus ullamcorper vel. Nulla in
+      magna et tellus sagittis pretium. Duis tincidunt dignissim pretium. Morbi
+      fringilla tristique euismod. Orci varius natoque penatibus et magnis dis
+      parturient montes, nascetur ridiculus mus. Aliquam aliquam vitae massa ut
+      pretium. Fusce sollicitudin, lectus sed condimentum blandit, ipsum metus
+      convallis elit, eget dignissim massa leo vitae urna. Aenean maximus, augue
+      et tincidunt gravida, justo magna fermentum justo, at vestibulum odio
+      sapien id elit. Nulla eu lacinia leo. In vel porta justo. Sed non risus
+      justo. Mauris et nibh eu libero auctor volutpat. Suspendisse ipsum nulla,
+      maximus et mollis sed, convallis at nunc. Morbi quis hendrerit neque.
+      Fusce nibh augue, ornare vitae nunc nec, euismod iaculis erat. Fusce
+      sollicitudin, orci sed blandit viverra, arcu nisl cursus metus, ut lacinia
+      metus lacus nec tellus. Donec et neque faucibus, auctor neque vitae,
+      placerat ex. Pellentesque sed tincidunt massa, vel semper nisl. Maecenas
+      venenatis, justo sed pretium venenatis, erat metus dignissim erat, sodales
+      commodo leo tellus eu nibh. Nunc sit amet suscipit metus. Proin venenatis,
+      est at lobortis laoreet, augue ex vestibulum ipsum, non laoreet est turpis
+      quis lectus. Nunc tortor tortor, efficitur nec imperdiet cursus, imperdiet
+      sed eros. Vestibulum pretium nulla ornare purus consequat, vel gravida dui
+      lobortis. Ut in scelerisque augue, id dictum sem. Donec mi tortor, rutrum
+      at elementum eleifend, sagittis eu nibh. Donec convallis et lectus id
+      maximus. Quisque fringilla ante metus, a feugiat dui tristique et. Sed
+      sapien ex, rutrum ut magna et, gravida ornare ligula. Phasellus hendrerit,
+      urna eu tincidunt eleifend, nulla ex pellentesque erat, a eleifend ex odio
+      eu nibh. Nullam pellentesque gravida orci, non tempus mi pharetra vel.
+      Curabitur nisi ante, vehicula a imperdiet nec, lobortis ut nisl. Vivamus a
+      iaculis lorem. Ut eget quam rhoncus, luctus nunc ut, varius ipsum.
+      Pellentesque eu erat id tortor sagittis accumsan. Curabitur nec
+      ullamcorper nunc. Nulla facilisi. Maecenas lobortis risus sagittis
+      consequat laoreet. Proin elementum, tortor a pretium iaculis, justo dui
+      mattis leo, non congue nulla enim vitae velit. Duis arcu tortor, elementum
+      ac elementum eu, iaculis vel leo. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Donec iaculis sodales metus, consequat facilisis nisl
+      cursus volutpat. Aenean ornare, eros sagittis accumsan varius, diam arcu
+      blandit urna, eu tempus ex sem ut tortor. Suspendisse finibus aliquet
+      ultrices. Vestibulum congue libero quis elit tincidunt lobortis.
+      Pellentesque cursus neque vitae leo egestas dictum. Quisque porta nisl sed
+      magna aliquet, eget suscipit nisi ultricies. Suspendisse ullamcorper elit
+      eget urna congue aliquet. Morbi ex libero, interdum quis purus sed,
+      iaculis iaculis ex. Curabitur sagittis sem nisi, nec faucibus dui dapibus
+      non. In laoreet erat eu dui porttitor aliquet. Ut non semper dui. Morbi
+      quis nunc malesuada, tempus lectus in, bibendum tellus. In id erat purus.
+      Proin gravida risus nisl, ac imperdiet ante condimentum a. Proin rutrum ut
+      nisi sit amet sagittis. Nulla viverra tristique enim, in porta magna
+      tincidunt eu. Maecenas vel est ultricies, mattis nisl sit amet, mollis
+      eros. Duis a ligula ligula. Praesent viverra odio turpis, in convallis
+      risus mattis vitae. Phasellus ullamcorper enim ut metus volutpat vehicula.
+      Nullam nec ante sem. Nam egestas sapien sit amet metus molestie maximus ut
+      non lorem. In velit ex, sodales in facilisis at, vulputate ac lorem. Nam
+      dignissim volutpat laoreet. Proin vitae elit at ante varius cursus. Mauris
+      ut porttitor massa, nec placerat tellus. Nulla tempus tincidunt gravida.
+      Sed eget nulla non orci sodales eleifend ac vel magna. Suspendisse rutrum
+      nisi luctus urna commodo, a maximus mi vulputate. Maecenas ullamcorper,
+      lectus nec facilisis mattis, massa augue interdum purus, vitae consequat
+      tellus magna vel arcu. Nam fermentum non sapien a porttitor. Sed id
+      tincidunt metus. Cras ultricies, elit ac congue volutpat, augue ante
+      pellentesque lacus, a tempor libero ipsum a ipsum. Nunc feugiat lacinia
+      mauris sit amet efficitur. Nulla sodales consectetur magna, ut congue sem
+      convallis ut. Etiam nisl sapien, ultricies nec congue vitae, facilisis sed
+      magna. Donec rhoncus mauris quis ipsum vulputate aliquet. Quisque
+      dignissim velit ut purus egestas mollis sit amet sit amet tortor. Proin id
+      tempor urna, et viverra justo. Cras felis mi, gravida eu ultrices vel,
+      luctus commodo justo. Aliquam ut interdum sapien. Morbi dapibus magna
+      massa, vitae malesuada felis fringilla vel. Phasellus accumsan risus
+      aliquam vulputate aliquam. Cras ac velit quis massa ullamcorper malesuada
+      eget congue dolor. Phasellus euismod imperdiet dui, nec eleifend nisl
+      ultricies id. Sed velit nisi, suscipit nec condimentum non, fermentum quis
+      ex. Sed posuere commodo orci, sed imperdiet dui. Donec dignissim ipsum
+      justo, id ornare sem lobortis at. Donec pulvinar finibus pretium. Ut a
+      nisi quis elit luctus posuere nec eget risus. Duis aliquet nisi in dui
+      viverra, vitae efficitur urna dapibus. Morbi varius laoreet ex nec
+      aliquam. Vivamus sit amet bibendum lacus, id egestas libero. In mattis
+      mollis mattis. Mauris varius metus nulla, sit amet cursus justo blandit
+      eget. Duis a tempus nulla, nec ultricies leo. Fusce dictum eu tellus at
+      viverra. Nunc in dui ac velit ornare vehicula. Nulla at turpis non sapien
+      tincidunt blandit id quis enim. Proin feugiat lacus a semper sagittis.
+      Etiam pretium et nibh et suscipit. Proin faucibus faucibus facilisis. Nam
+      faucibus tristique faucibus. Class aptent taciti sociosqu ad litora
+      torquent per conubia nostra, per inceptos himenaeos. Nullam vulputate
+      fringilla lorem eu bibendum. Suspendisse tempus, libero quis congue
+      pulvinar, sapien velit ullamcorper odio, ac placerat sem metus vitae
+      risus. Aliquam erat volutpat. Pellentesque ac rhoncus nibh. Cras quis nunc
+      sapien. Suspendisse semper magna a turpis auctor, sit amet efficitur
+      lectus tincidunt. Pellentesque habitant morbi tristique senectus et netus
+      et malesuada fames ac turpis egestas. Curabitur in nisl quis risus
+      interdum pulvinar. Donec faucibus luctus justo, sed porta mauris. Donec
+      posuere faucibus neque non rutrum. Proin aliquet lorem sit amet est
+      molestie, vel lacinia metus dictum. Aenean blandit magna diam, et
+      tincidunt diam sodales non. Fusce ullamcorper urna nec convallis rutrum.
+      Maecenas leo tortor, finibus vel ex at, aliquam fringilla neque. Nunc
+      porta sit amet tellus eu pretium. Proin a porta tortor. Fusce elementum
+      elementum ex. Integer id lorem mauris. Proin eleifend pretium tempus. Ut
+      id suscipit nibh. Curabitur tempus nisi est, in mollis est suscipit id. In
+      hac habitasse platea dictumst. Praesent tempus nisl nunc, vel aliquet sem
+      porttitor quis. Nulla et est metus. Proin sagittis nisi suscipit, rutrum
+      nibh non, tempor turpis. Donec commodo justo ut ipsum tincidunt, vitae
+      condimentum mauris laoreet. Sed et posuere est, non luctus velit.
+      Pellentesque finibus porta odio, quis interdum quam lobortis a. Sed eget
+      luctus est. Quisque imperdiet placerat ante, vitae egestas arcu malesuada
+      id. Proin pretium varius dui vel porta. Nulla facilisi. In hac habitasse
+      platea dictumst. Pellentesque at pharetra est, sed finibus tortor. Donec
+      ut porta urna. In ac turpis sem. Nulla et nisl sit amet lorem pharetra
+      faucibus. Sed volutpat, nulla sed efficitur elementum, nibh est elementum
+      risus, sit amet aliquam lacus eros non mauris. Donec pellentesque a nunc
+      sed faucibus. Maecenas non ornare mi. Nam lobortis eros et mi fringilla, a
+      vestibulum neque accumsan. Praesent euismod sagittis ultricies. Cras
+      auctor nisl a sodales cursus. In tellus magna, pretium quis velit nec,
+      feugiat faucibus mauris. Sed volutpat augue ipsum, ut tincidunt elit
+      facilisis eu. Proin ac nunc justo. Vestibulum non ligula libero. Nam sit
+      amet justo et sem vulputate gravida non quis felis. Aliquam ut tempor
+      metus, in aliquam ante. Sed sed libero maximus, interdum est vitae,
+      iaculis mauris. Etiam enim risus, rutrum non iaculis vel, cursus vitae
+      elit. Proin lacinia semper eleifend. Fusce neque tortor, varius a
+      porttitor vitae, consequat sed arcu. Praesent feugiat pretium ex, sit amet
+      facilisis enim accumsan vel. Aenean sit amet egestas dui, vel molestie mi.
+      Donec ultricies arcu massa, fringilla condimentum orci cursus id. Cras
+      gravida dictum purus quis dignissim. Vestibulum lectus dolor, lacinia at
+      felis in, volutpat ornare diam. Suspendisse eleifend venenatis elit ac
+      suscipit. Vestibulum bibendum rhoncus hendrerit. Morbi velit leo, laoreet
+      sollicitudin iaculis sed, ornare nec arcu. Orci varius natoque penatibus
+      et magnis dis parturient montes, nascetur ridiculus mus. Aenean ac
+      pellentesque turpis, et pharetra odio. Nam sagittis, lorem vel faucibus
+      vulputate, ante mauris venenatis risus, non commodo urna odio vel lacus.
+      Nunc dapibus urna et mattis convallis. Nam sit amet purus et ipsum posuere
+      fermentum ac eu sapien. In hac habitasse platea dictumst. Cras eu pulvinar
+      risus, a tincidunt mi. Proin dictum, diam vitae maximus iaculis, leo magna
+      volutpat mi, id facilisis tellus magna ut leo. Nullam nec velit turpis.
+      Sed vulputate scelerisque nulla varius malesuada. Nam porta est finibus,
+      bibendum elit nec, faucibus purus. Suspendisse porttitor mi libero, ut
+      fringilla nibh ornare ac. Nam ullamcorper enim a hendrerit posuere. Duis
+      elit tellus, tincidunt et ipsum sed, lacinia tempus nulla. Integer et
+      tincidunt mauris. Morbi non eros efficitur, pretium diam a, consequat
+      nisl. Phasellus condimentum, lectus vel malesuada tincidunt, risus enim
+      pellentesque odio, at sagittis lacus enim in est. Nulla vitae dolor enim.
+      Maecenas venenatis mauris eu arcu facilisis molestie. Quisque dignissim
+      ante a orci blandit laoreet vitae eget erat. Interdum et malesuada fames
+      ac ante ipsum primis in faucibus. Aliquam consectetur gravida est pulvinar
+      cursus. Mauris convallis, ex in porta vestibulum, nunc felis consequat
+      augue, eu efficitur erat ligula vitae mauris. Nunc luctus mi ut vehicula
+      varius. Fusce sed arcu gravida ligula suscipit posuere vitae non mauris.
+      Cras sit amet arcu in urna sodales sagittis. In lobortis, ante id bibendum
+      facilisis, mi lorem tempus quam, in fermentum mauris libero quis magna.
+      Morbi maximus urna non arcu dapibus ultricies. Sed vel efficitur ex. Nulla
+      odio magna, bibendum vel tellus vitae, tincidunt efficitur velit.
+      Pellentesque lacinia purus et nibh viverra laoreet. Nunc auctor risus a
+      est ullamcorper, a mattis purus iaculis. Curabitur ornare arcu venenatis
+      purus feugiat laoreet. Sed consequat augue dolor, eu placerat nulla
+      pellentesque ac. Integer dictum blandit elit, quis varius velit aliquet
+      ut. Cras sagittis nunc sit amet nulla commodo laoreet. Aenean tempus
+      luctus leo nec pretium. Cras vel nunc quam. Proin dolor lacus, porta et mi
+      sit amet, viverra commodo nibh. Donec iaculis arcu quis congue
+      condimentum. Phasellus facilisis sem ipsum, in sagittis nibh interdum non.
+      In augue lectus, vehicula id lacus sed, dignissim feugiat odio.
+      Suspendisse ut finibus ligula. Nullam blandit finibus ex, a vulputate nisi
+      lobortis non. Sed et vulputate lectus.
+    </div>
+
+    <!-- JS Links -->
+    <script src="scripts/cvbutton.js"></script>
+    <script src="scripts/typewriter.js"></script>
+    <script src="scripts/nav.js"></script>
   </body>
 </html>
