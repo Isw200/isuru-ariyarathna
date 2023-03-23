@@ -21,17 +21,20 @@ body {
   margin-bottom: 1em;
   color: #00ffc5;
 }
+
 .hero__title {
   font-size: 4rem;
   font-weight: 600;
   color: #d3d0ff;
 }
+
 .typewrite {
   font-size: 4rem;
   font-weight: 600;
   color: #d3d0ff56;
   margin-bottom: 0.2em;
 }
+
 .hero__para {
   font-size: 1rem;
   color: #d3d0ff8f;
@@ -40,83 +43,108 @@ body {
   font-weight: 300;
   line-height: 25px;
 }
+@media screen and (max-width: 768px) {
+  .hero__text {
+    font-size: 1rem;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
+  .typewrite {
+    font-size: 3rem;
+  }
+  .hero__para {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
 /* cv button */
 
 .cv_button a {
-    text-align: center;
-    text-decoration: none;
-    line-height: 60px;
-    color: #00ffc5;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  color: #00ffc5;
+}
+
+[class^="btn-"] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  max-width: 220px;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-6 {
+  width: 220px;
+  color: #00ffc5;
+}
+
+.btn-6 span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #00ffdd2f;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.btn-6:hover {
+  color: #00ffc5;
+}
+
+.btn-6:hover span {
+  width: 550px;
+  height: 550px;
+}
+
+.btn-6:active {
+  background-color: #00ffc5;
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
   }
-  
-  [class^="btn-"] {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    max-width: 220px;
-    text-transform: uppercase;
-    border: 1px solid currentColor;
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
   }
-  
-  .btn-6 {
-    width: 220px;
-    color: #00ffc5;
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
   }
-  
-  .btn-6 span {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background-color: #00ffdd2f;
-    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+}
+
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
   }
-  
-  .btn-6:hover {
-    color: #00ffc5;
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
   }
-  
-  .btn-6:hover span {
-    width: 550px;
-    height: 550px;
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
   }
-  
-  .btn-6:active {
-    background-color: #00ffc5;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-left: 0;
+    width: 90%;
+    margin: 0 auto;
   }
-  
-  @keyframes criss-cross-left {
-    0% {
-      left: -20px;
-    }
-    50% {
-      left: 50%;
-      width: 20px;
-      height: 20px;
-    }
-    100% {
-      left: 50%;
-      width: 375px;
-      height: 375px;
-    }
+  .hero__para {
+    width: 100%;
   }
-  
-  @keyframes criss-cross-right {
-    0% {
-      right: -20px;
-    }
-    50% {
-      right: 50%;
-      width: 20px;
-      height: 20px;
-    }
-    100% {
-      right: 50%;
-      width: 375px;
-      height: 375px;
-    }
-  }
-  
+}

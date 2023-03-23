@@ -102,3 +102,24 @@ nav a:focus {
 .nav-up {
   top: -70px;
 }
+
+/* Mobile Nav */
+#mobi_nav_toggle{
+  display: none; 
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  #mobi_nav_toggle {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

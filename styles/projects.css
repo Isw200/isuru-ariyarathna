@@ -3,11 +3,31 @@
   width: 60%;
   margin: 7em auto;
 }
+@media screen and (max-width: 768px) {
+  .projects {
+    width: 90%;
+  }
+  .title h3 {
+    font-size: 1.2rem;
+  }
+  .title h2 {
+    font-size: 2rem;
+  }
+  .title .line {
+    width: 200px;
+  }
+  .projects .title h2 {
+    font-size: 1.5rem;
+  }
+}
+
 .projects .project {
   width: 100%;
   margin: 7em auto;
   display: flex;
 }
+
+  
 .projects .project1 {
   margin-top: 3em;
 }
@@ -120,12 +140,49 @@
   gap: 1em;
   margin-bottom: 1em;
 }
+@media screen and (max-width: 768px) {
+  .projects .project {
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  .projects .project .project-image {
+    width: 100%;
+    position: relative;
+    margin-bottom: 0em;
+  }
+  .projects .project .project-details {
+    width: 100%;
+    text-align: start;
+    margin: 0;
+  }
+  .projects .project .project-details ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    margin-top: 1em;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  .projects .project .project-details .project-links a {
+    margin-left: 1em;
+    margin-top: 2em;
+    color: #d3d0ff;
+    text-decoration: none;
+  }
+
+}
 
 /* referances */
 .referance {
   width: 60%;
   margin: 7em auto;
 }
+@media screen and (max-width: 768px) {
+  .referance {
+    display: none;
+  }
+}
+
 .referance .refContainer {
   margin-top: 3em;
   display: grid;
@@ -203,14 +260,29 @@
   justify-content: center;
   color: #00ffc5;
 }
-.footer p{
+.footer p {
   text-align: center;
   font-family: "M PLUS 1 Code", sans-serif;
   font-weight: 100;
 }
-.footer h2{
+.footer h2 {
   color: #00ffc371;
   text-align: center;
   margin-top: 1em;
   font-family: "Arizonia", cursive;
+}
+@media screen and (max-width: 768px) {
+  .end {
+    width: 100%;
+    margin: 7em auto 2em auto;
+  }
+  .end p{
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  .footer {
+    margin-top: 5em;
+  }
+
 }

@@ -3,6 +3,11 @@
   bottom: 0;
   left: 3em;
 }
+@media screen and (max-width: 768px) {
+  .socialMedia {
+    display: none;
+  }
+}
 .socialMedia .social__icons li {
   width: 25px;
   margin-top: 2em;
@@ -36,6 +41,12 @@
   display: flex;
   gap: 2em;
   transform: rotate(90deg);
+}
+
+@media screen and (max-width: 768px) {
+  .email {
+    display: none;
+  }
 }
 .email a {
   text-decoration: none;
