@@ -104,8 +104,8 @@ nav a:focus {
 }
 
 /* Mobile Nav */
-#mobi_nav_toggle{
-  display: none; 
+#mobi_nav_toggle {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,8 +118,46 @@ nav a:focus {
     cursor: pointer;
     color: #fff;
     font-size: 1.5em;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
   }
 }
+
+/* Mobile Nav */
+#mobile_nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #003351cc;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  display: none;
+}
+#mobile_nav #mobi_nav_close{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile_nav .mobi_nav__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 4em;
+  height: 100%;
+}
+
+#mobile_nav .mobi_nav__container a{
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 2em 0;
+}
+

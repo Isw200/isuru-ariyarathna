@@ -44,3 +44,12 @@ window.onscroll = () => {
     nav.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
   }
 };
+
+
+document.getElementById("mobi_nav_toggle").addEventListener("click", () => {
+  document.getElementById("mobile_nav").style.display = "block";
+});
+
+document.getElementById("mobi_nav_close").addEventListener("click", () => {
+  document.getElementById("mobile_nav").style.display = "none";
+});

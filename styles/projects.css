@@ -23,7 +23,7 @@
 
 .projects .project {
   width: 100%;
-  margin: 7em auto;
+  margin: 15em auto;
   display: flex;
 }
 
@@ -143,7 +143,9 @@
 @media screen and (max-width: 768px) {
   .projects .project {
     flex-direction: column;
-    margin-top: 2em;
+    margin: 3em auto;
+    border: 1px solid #00ddff44;
+    padding: 1em;
   }
   .projects .project .project-image {
     width: 100%;
@@ -168,6 +170,10 @@
     margin-top: 2em;
     color: #d3d0ff;
     text-decoration: none;
+  }
+  .projects .project2 .project-image {
+    right: 0%;
+    width: 100%;
   }
 
 }
@@ -205,7 +211,7 @@
 }
 
 .referance .refContainer .ref .photo {
-  width: 200px;
+  width: 100%;
 }
 .referance .refContainer img {
   width: 100%;
